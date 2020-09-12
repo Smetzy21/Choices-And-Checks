@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupC1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Choices And Checks"/>
+    <Property name="name" type="java.lang.String" value="Choices And Checks" noResource="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jScrollPaneMain" min="-2" pref="925" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jScrollPaneVarsHeader" min="-2" pref="155" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jScrollPaneVars" min="-2" pref="160" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jScrollPaneDetails" pref="507" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jScrollPaneMain" min="-2" pref="1025" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPaneDetails" max="32767" attributes="0"/>
+                  <Component id="jScrollPaneVars" max="32767" attributes="0"/>
+                  <Component id="jScrollPaneVarsHeader" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPaneDetails">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txtDetails">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f0" green="f0" id="Label.background" palette="3" red="f0" type="palette"/>
+            </Property>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="lineWrap" type="boolean" value="true"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Enter the choices you want to make during your playthrough below and see the results. The simulator assumes you have maxed out anything possible to max out that isn&apos;t a choice."/>
+            <Property name="wrapStyleWord" type="boolean" value="true"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPaneVarsHeader">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JList" name="jListVarsHeader">
+          <Properties>
+            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Relationship Points"/>
+                <StringItem index="1" value="Countries"/>
+                <StringItem index="2" value="Secret Stats"/>
+                <StringItem index="3" value="All"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="jListVarsHeaderValueChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPaneVars">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JList" name="jListVars">
+          <Properties>
+            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+              <StringArray count="31">
+                <StringItem index="0" value="ProN"/>
+                <StringItem index="1" value="Aka"/>
+                <StringItem index="2" value="Altina"/>
+                <StringItem index="3" value="Carina"/>
+                <StringItem index="4" value="Ginasta"/>
+                <StringItem index="5" value="Hilstara"/>
+                <StringItem index="6" value="Nalili"/>
+                <StringItem index="7" value="Qum"/>
+                <StringItem index="8" value="Riala"/>
+                <StringItem index="9" value="Robin"/>
+                <StringItem index="10" value="Uyae"/>
+                <StringItem index="11" value="Varia"/>
+                <StringItem index="12" value="Yarra"/>
+                <StringItem index="13" value="Megail"/>
+                <StringItem index="14" value="Trin"/>
+                <StringItem index="15" value="Balia"/>
+                <StringItem index="16" value="Dari"/>
+                <StringItem index="17" value="Wynn"/>
+                <StringItem index="18" value="Iris"/>
+                <StringItem index="19" value="Janine"/>
+                <StringItem index="20" value="Sarai"/>
+                <StringItem index="21" value="Fheliel"/>
+                <StringItem index="22" value="Lynine"/>
+                <StringItem index="23" value="Orilise"/>
+                <StringItem index="24" value="Neranda"/>
+                <StringItem index="25" value="Wendis"/>
+                <StringItem index="26" value="Sabitha"/>
+                <StringItem index="27" value="Tertia"/>
+                <StringItem index="28" value="Elleani"/>
+                <StringItem index="29" value="Esthera"/>
+                <StringItem index="30" value="Mestan"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="jListVarsValueChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPaneMain">
+      <Properties>
+        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+        <Property name="verticalScrollBarPolicy" type="int" value="22"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jScrollPaneIntro" min="-2" pref="483" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnUpdate" min="-2" pref="179" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelChp1" alignment="0" min="-2" pref="232" max="-2" attributes="0"/>
+                          <Component id="labelChoice1" alignment="0" min="-2" pref="266" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="btnC1Yarra" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="btnC1Qum" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="btnC1Aka" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="cbC2HighClass" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbC2BunnyBefore" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbC2Zirantian" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cbC2BunnyAfter" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbC2Exotic" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbC2YhiliniBastard" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="labelChoice2" alignment="0" min="-2" pref="333" max="-2" attributes="0"/>
+                          <Component id="cbC3Whored" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelChoice3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelChoice4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelChoice5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBoxProNCon" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                          <Component id="cb5ProNCon" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="cb6CopyBank" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="labelCopyCount" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="labelChoice6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="invR1IronCudgel" alignment="0" pref="500" max="32767" attributes="0"/>
+                                  <Component id="invR1Cache" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1DustyHorde" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1AriGarda" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Steel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Corruption" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Public" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Bridge" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Shrine" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Magicshop" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Supplier" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Bank" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="labelProNR1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                                      <Component id="labelCost" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                                      <Component id="labelROI" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="invR1ArmsDealer" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="invR1Mine" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                              <Component id="labelChp1Invest" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cbR1TakeFunds" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="795" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPaneIntro" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnUpdate" min="-2" pref="81" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelChp1" alignment="3" min="-2" pref="58" max="-2" attributes="0"/>
+                          <Component id="labelChp1Invest" alignment="3" min="-2" pref="58" max="-2" attributes="0"/>
+                          <Component id="cbR1TakeFunds" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="labelChoice1" min="-2" pref="36" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="btnC1Qum" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnC1Yarra" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnC1Aka" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="labelChoice2" min="-2" pref="36" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="cbC2Zirantian" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbC2Exotic" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="cbC2HighClass" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbC2YhiliniBastard" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="cbC2BunnyBefore" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbC2BunnyAfter" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="labelChoice3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cbC3Whored" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="labelChoice4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jComboBoxProNCon" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="labelChoice5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cb5ProNCon" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="labelChoice6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="cb6CopyBank" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelCopyCount" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelProNR1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelCost" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelROI" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1ArmsDealer" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Mine" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Bank" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Supplier" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Steel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Cache" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1IronCudgel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1DustyHorde" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1AriGarda" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Corruption" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Public" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Bridge" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Shrine" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="invR1Magicshop" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="690" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPaneIntro">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="txtIntro">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="f0" green="f0" id="Label.background" palette="3" red="f0" type="palette"/>
+                    </Property>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="lineWrap" type="boolean" value="true"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="Enter the choices you want to make during your playthrough below and see the results. The simulator assumes you have maxed out anything possible to max out that isn&apos;t a choice."/>
+                    <Property name="wrapStyleWord" type="boolean" value="true"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="opaque" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="btnUpdate">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Update"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChp1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Chapter 1: Soldier"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChoice1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choice 1: Who to rescue first at merchant camp?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="btnC1Yarra">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="btnGroupC1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Yarra"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnC1YarraActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="btnC1Qum">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="btnGroupC1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Qum"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnC1QumActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="btnC1Aka">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="btnGroupC1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Aka"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnC1AkaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChoice2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choice 2: Which prostitutes, if any, to sleep with in Stineford."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbC2HighClass">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="High-class Prostitute"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbC2HighClassActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbC2YhiliniBastard">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Yhilini Bastard Prostitute"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbC2YhiliniBastardActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbC2Zirantian">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Zirantian Prostitute"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbC2ZirantianActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbC2Exotic">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Exotic Prostitute"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbC2BunnyBefore">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Bunny-ears Prostitute (Pre-reveal)"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbC2BunnyBeforeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbC2BunnyAfter">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Bunny-ears Prostitute (Post-reveal)"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbC2BunnyAfterActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChoice3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choice 3: Whether or not to whore Qum out."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbC3Whored">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Qum whored out"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbC3WhoredActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChoice4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choice 4: How much ProN to convert to Sx in Stineford"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxProNCon">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="7">
+                    <StringItem index="0" value="0 ProN"/>
+                    <StringItem index="1" value="2500 ProN"/>
+                    <StringItem index="2" value="5000 ProN"/>
+                    <StringItem index="3" value="7500 ProN"/>
+                    <StringItem index="4" value="10000 ProN"/>
+                    <StringItem index="5" value="12500 ProN"/>
+                    <StringItem index="6" value="15000 ProN"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxProNConActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChp1Invest">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="24" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Round 1 Investments"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelProNR1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ProN: 80000"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelCost">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cost"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelROI">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Return On Investment"/>
+              </Properties>
+            </Component>
+            <Component class="GUI.Investment" name="invR1ArmsDealer">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Mine">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Bank">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Supplier">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Steel">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Cache">
+            </Component>
+            <Component class="GUI.Investment" name="invR1IronCudgel">
+            </Component>
+            <Component class="GUI.Investment" name="invR1DustyHorde">
+            </Component>
+            <Component class="GUI.Investment" name="invR1AriGarda">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Corruption">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Public">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Bridge">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Shrine">
+            </Component>
+            <Component class="GUI.Investment" name="invR1Magicshop">
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChoice5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choice 5: Whether or not to have Megail convert ProN into Sx for you"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cb5ProNCon">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="10k ProN converted into 25k Sx"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cb5ProNConActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelChoice6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choice 6: Whether or not to have Trin duplicate the Yhilin Bank Employee"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cb6CopyBank">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Copy bank employee"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cb6CopyBankActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelCopyCount">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0/6 Duplicates"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbR1TakeFunds">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="10" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Take extra 25k from Megail"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbR1TakeFundsActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
